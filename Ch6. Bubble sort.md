@@ -7,15 +7,19 @@
 
 
 ```python
-# 실습 6-1 버블 정렬 구현하기- 패스를 맨 끝열부터 수행
+# 실습 6-1 버블 정렬 구현하기- 패스를 맨 첫요소부터 시작
 
 def bubble_sort(a):
-    """배열 a를 버블정렬을 이용해 오름차순 정렬"""
     n = len(a)
-    for i in range(n-1): # 패스 횟수
-        for j in range(n-1,i,-1): # 두 요소 비교
-            if a[j-1] > a[j]:
-                a[j-1],a[j] =a[j],a[j-1]   # 두 요소 자리 교환
+    for i in range(n-1): # 비교 횟수
+        for j in range(i,n-1): # 배열의 왼쪽부터 오른쪽으로 이동하며 비교
+            print(i,a[i],i-1,a[i-1],a)
+            if i == 0:   # 첫번째 요소와 마지막 요소가 교환되는 경우 제외
+                continue
+            if a[i-1] > a[i]:  
+                a[i],a[i-1] = a[i-1],a[i]   # 요소 교환
+                
+    return a
                 
                 
 bubble_sort([1,2,3,4])
