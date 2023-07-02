@@ -1,26 +1,66 @@
-# data-structure-algorithm
+## Algorithn_study
 
----
-# 자료구조
 
-[ Do it 자료구조와 함께 배우는 알고리즘 입문 파이썬 편 참고 ] 
-### ch 5. 재귀 함수
-- 하노이 탑
-
-### ch 6. 
-
-- 버블정렬
-- 퀵정렬
-- 단순선택, 단순 삽입 정렬
-- 셸 정렬(ch6 sort.ipynb파일에 수록)
-
-- 셸 정렬 따로 파일 만들어 업로드하기
-- 정렬 끝나면 'ch6 sort' 파일 삭제하기
-
----
-# 알고리즘 문제
-
-programmers_test
-프로그래머스 스쿨: https://school.programmers.co.kr/
-## Lv1.
-## Lv2.
+<h2>기여자 (Contributors) ✨</h2>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/beomki-kim">
+        <img src="https://avatars.githubusercontent.com/u/37844020?v=4"width="100px;" alt=""/>
+        <br />
+        <sub>
+          <b>Beomki Kim</b>
+        </sub>
+      </a>
+      <br />
+      <a href="https://github.com/beomki-kim" title="Code">🏠</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/SilverWithA">
+        <img src="https://avatars.githubusercontent.com/u/92441328?v=4"width="100px;" alt=""/>
+        <br />
+        <sub>
+          <b>silver a</b>
+        </sub>
+      </a>
+      <br />
+      <a href="https://github.com/SilverWithA" title="Code">🏠</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/kjjh714">
+        <img src="https://avatars.githubusercontent.com/u/59947483?v=4" width="100px;" alt=""/>
+        <br />
+        <sub>
+          <b>kjjh714</b>
+        </sub>
+      </a>
+      <br/>
+      <a href="https://github.com/kjjh714" title="Code">🏠</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Hoonscucci">
+        <img src="https://avatars.githubusercontent.com/u/132039559?v=4"width="100px;" alt=""/>
+        <br />
+        <sub>
+          <b>Hoonscucci</b>
+        </sub>
+      </a>
+      <br />
+      <a href="https://github.com/Hoonscucci" title="Code">🏠</a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/lee-young-jik">
+        <img src="https://avatars.githubusercontent.com/u/91588673?v=4"width="100px;" alt=""/>
+        <br />
+        <sub>
+          <b>Young JIk LEE</b>
+        </sub>
+      </a>
+      <br />
+      <a href="https://github.com/lee-young-jik" title="Code">🏠</a>
+    </td>
+  </tr>
+</table>
+* ✅ Notion
+  
+https://imminent-english-3ca.notion.site/df63859b58f341a1a48d51cca61bd113?v=95e462461abf4933843561805e6b408b&pvs=4
