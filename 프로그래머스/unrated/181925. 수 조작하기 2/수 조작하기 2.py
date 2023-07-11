@@ -13,3 +13,12 @@ def solution(numLog):
             answer += "a"
         
     return answer
+
+# -------------- 다른풀이 -----------------
+# def solution(log):
+#     res=''
+#     joystick=dict(zip([1,-1,10,-10],['w','s','d','a']))
+#     print(joystick)
+#     for i in range(1,len(log)):
+#         res+=joystick[log[i]-log[i-1]]
+#     return res
