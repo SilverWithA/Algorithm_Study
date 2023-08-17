@@ -13,32 +13,32 @@
 # (1) 재귀 방식-------------------------------------------------
 
 
-def solution(n):
-    answer = [0] *n
-    print("answer: ", answer)
+# def solution(n):
+#     answer = [0] * n
+#     print("answer: ", answer)
     
-    def fibo(n):
-        if n == 0 or n ==1:
-            # print("answer: ", answer)
-            return 1
+#     def fibo(n):
+#         if n == 0 or n ==1:
+#             # print("answer: ", answer)
+#             return 1
     
-        if answer[n] != 0:
-            # print("answer: ", answer)
-            return answer[n] % 1234567
+#         if answer[n+1] != 0:
+#             # print("answer: ", answer)
+#             return answer[n] % 1234567
     
-        answer[n] =  fibo(n-2) + fibo(n-1)
-        # print("answer: ", answer)
-        return answer[n] % 1234567
+#         answer[n+1] =  fibo(n-2) + fibo(n-1)
+#         # print("answer: ", answer)
+#         return answer[n] % 1234567
     
-    return fibo(n)
+#     return fibo(n)
 
-# (2) for문으로 구현-------------------------------------------------
+# # (2) for문으로 구현-------------------------------------------------
 def solution(n):
     result = [0,1,1] + [0]*(n-2)
     # print(result)
     
     for i in range(3,n+1):
-        result[i] = result[i-2] + result[i-1]
+        result[i] = (result[i-2] + result[i-1])%1234567
         # print(result)
         
     return result[n] % 1234567
