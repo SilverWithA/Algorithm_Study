@@ -25,25 +25,42 @@
 #             # print("cnt: ",cnt)
 #     return cnt
 
-# 시도(2): 런타임에러-----------------------------------------
+# 시도(2): -----------------------------------------
+# def solution(skill, skill_trees):
+#     answer = 0
+    
+    
+#     for skill_tree in skill_trees:
+#         skill_list = list(skill)
+#         # print("------------------------------")
+#         # print("skill_list: ",skill_list)
+        
+#         for s in skill_tree:
+#             if s in skill:
+#                 # print("skill_tree: ",skill_tree)
+#                 # print("s: ",s)
+#                 if s != skill_list.pop(0):
+#                     break
+#         else:
+#             answer +=1
+#             # print("answer: ",answer)
+#     return answer
+
+
 def solution(skill, skill_trees):
     answer = 0
-    
-    
-    for skill_tree in skill_trees:
-        skill_list = list(skill)
-        # print("------------------------------")
-        # print("skill_list: ",skill_list)
-        
-        for s in skill_tree:
-            if s in skill:
-                # print("skill_tree: ",skill_tree)
-                # print("s: ",s)
-                if s != skill_list.pop(0):
-                    break
-        else:
-            answer +=1
-            # print("answer: ",answer)
+    for i in skill_trees:
+        s = ''
+        for j in i:
+            # 선행스킬에 포함된다면
+            if j in skill:  
+                s += j
+        # skill의 앞부터 s의 길이만큼 s와 같다면
+        if skill[:len(s)] == s:  
+
+            # 가능한 스킬트리 카운트시작
+            answer += 1  
+
     return answer
 
                     
