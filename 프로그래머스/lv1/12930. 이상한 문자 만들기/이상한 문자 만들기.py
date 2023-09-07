@@ -1,7 +1,7 @@
 def solution(s):
     s = s.lower()
     words = s.split(' ')
-    # print(words)
+    print(words)
     
     answer = []
     
@@ -13,10 +13,12 @@ def solution(s):
             else:
                 temp += word[i].lower()
         answer.append(temp)
+    print(answer)
 
-    result = ''
-    for i in range(len(answer)):
-        result += answer[i] + " "
+#     result = ''
+#     for i in range(len(answer)):
+#         result += answer[i] + " "
                 
-    return result[:-1]
+#     return result[:-1]
+    return ' '.join(answer)
                 
