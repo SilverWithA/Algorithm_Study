@@ -1,6 +1,6 @@
 N=int(input())
 
-dic={}
+gumgum={}
 
 cnt=0
 
@@ -8,15 +8,15 @@ for _ in range(N):
     Input=input()
 
     if Input=="ENTER":
-        for key,value in dic.items():
+        for key,value in gumgum.items():
             if value==1:
                 cnt+=1
-        dic={}
+        gumgum={}
     else:
-        if Input not in dic:
-            dic[Input]=1
+        if Input not in gumgum:
+            gumgum[Input]=1
 
-for key,value in dic.items():
+for key,value in gumgum.items():
     if value==1:
         cnt+=1
 
