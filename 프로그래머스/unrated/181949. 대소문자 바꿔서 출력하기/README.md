@@ -1,21 +1,25 @@
-# [unrated] 대소문자 바꿔서 출력하기 - 181949 
-[풀이]
-* swapcase() 메서드
-* islower(), isupper() 사용
+# [level unrated] 대소문자 바꿔서 출력하기 - 181949 
 
-
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181949) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181949?language=java) 
 
 ### 성능 요약
-메모리: 7.34 MB, 시간: 11.40 ms
+
+메모리: 76 MB, 시간: 374.35 ms
 
 ### 구분
+
 코딩테스트 연습 > 코딩 기초 트레이닝
 
 ### 채점결과
-Empty
+
+정확성: 100.0<br/>합계: 100.0 / 100.0
+
+### 제출 일자
+
+2023년 10월 3일 23:27:24
 
 ### 문제 설명
+
 <p>영어 알파벳으로 이루어진 문자열 <code>str</code>이 주어집니다. 각 알파벳을 대문자는 소문자로 소문자는 대문자로 변환해서 출력하는 코드를 작성해 보세요.</p>
 
 <hr>
@@ -45,4 +49,4 @@ Empty
 <p>※2023년 05월 03일 제한사항이 수정되었습니다.</p>
 
 
-> 출처: 프로그래머스 코딩 테스트 연습, https://programmers.co.kr/learn/challenges
+> 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
