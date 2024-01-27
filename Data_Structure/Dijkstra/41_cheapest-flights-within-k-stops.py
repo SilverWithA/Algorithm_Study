@@ -3,20 +3,28 @@ import heapq
 
 def findCheapestPrice(n,flights, src, dst, k):
     graph = collections.defaultdict(list)
-    for start,end,price in flights:
-        graph[start].append((end,price))
-    print(graph)
+    for start, end, price in flights:
+        graph[start].append((end, price))
+    print("graph: ",graph)
 
-    # k는 남은 경유지의 수
-    Q = [(0, src, k)]
+    # price, 경유지, 시작 노드
+    Q = [(0, k+1, src)]
+    distance = [float('inf')] * n
+    distance[src] = 0
     while Q:
-        price, node, k = heapq.heappop(Q)
-        if node == dst:
-            return price
+        print()
+        print("Q: ",Q)
+        print("distance: ", distance)
+        price, k, node = heapq.heappop(Q)
+        print("node: ",node)
         if k >= 0:
             for next_node, next_price in graph[node]:
+                print("next_node: ",next_node)
                 alt = price + next_price
-                heapq.heappush(Q, (alt, next_node, k-1))
-    return -1
-print(findCheapestPrice(4, [[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]],
-                        0,3,1))
+                if alt < distance[next_node]:
+                    distance[next_node] = alt
+                    heapq.heappush(Q, (alt, k - 1, next_node))
+    return -1 if distance[dst] == float('inf') else distance[dst]
+
+print(findCheapestPrice(5, [[0,1,5],[1,2,5],[0,3,2],[3,1,2],[1,4,1],[4,2,1]],
+                        0,2,2))
