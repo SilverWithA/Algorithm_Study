@@ -23,7 +23,7 @@
 ##### <정렬>
 🫧 버블  
 🧷 병합
-* [BOJ 2751: 수 정렬하기](https://www.acmicpc.net/problem/2751)
+* [BOJ 2751: 수 정렬하기](https://www.acmicpc.net/problem/2751)  
 🍟 퀵  
 ##### <이진 검색>
 ##### <비트조작>
