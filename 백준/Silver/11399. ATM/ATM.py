@@ -1,17 +1,10 @@
-# 데이터 받아오기
-n = int(input())
+import sys
+customer = int(sys.stdin.readline())
 
-
-line = list(map(int, input().split()))
-
-
-# print("정렬 전: ", line)
+line = list(map(int, sys.stdin.readline().split(' ')))
 line.sort()
-# print"정렬 후: ",line)
 
-result = [0] * len(line)
-
-for i in range(len(line)):
-    result[i] = sum(line[:i+1])
-
-print(sum(result))
+res = 0
+for i, time in enumerate(line):
+    res += time * (len(line) - i)
+print(res)
